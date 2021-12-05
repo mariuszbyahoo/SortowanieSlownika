@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SortowanieSlownika.DAL;
+using System;
 
 namespace SortowanieSlownika
 {
@@ -6,9 +7,9 @@ namespace SortowanieSlownika
     {
         static void Main(string[] args)
         {
-            // pobieram słownik
+            var repo = new MockDictionaryRepo();
 
-            // 
+            var pairs = repo.GetAll();
         }
     }
 }
